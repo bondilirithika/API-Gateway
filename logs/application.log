@@ -1,0 +1,66 @@
+2025-05-23 15:54:01.846 [main] INFO  com.example.demo.DemoApplication - Starting DemoApplication using Java 21.0.1 with PID 5184 (C:\Users\srima\Downloads\API-Gateway\target\classes started by srima in C:\Users\srima\Downloads\API-Gateway)
+2025-05-23 15:54:01.865 [main] INFO  com.example.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-23 15:54:02.831 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2025-05-23 15:54:02.911 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 970 ms
+2025-05-23 15:54:02.929 [main] DEBUG org.springframework.boot.web.servlet.ServletContextInitializerBeans - Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105, kongOnlyFilter urls=[/*] order=2147483647
+2025-05-23 15:54:02.930 [main] DEBUG org.springframework.boot.web.servlet.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/]
+2025-05-23 15:54:03.132 [main] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - 5 mappings in 'requestMappingHandlerMapping'
+2025-05-23 15:54:03.236 [main] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-05-23 15:54:03.279 [main] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-05-23 15:54:03.330 [main] DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-05-23 15:54:03.455 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2025-05-23 15:54:03.466 [main] INFO  com.example.demo.DemoApplication - Started DemoApplication in 1.983 seconds (process running for 2.847)
+2025-05-23 15:54:05.700 [http-nio-8081-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-05-23 15:54:05.701 [http-nio-8081-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2025-05-23 15:54:05.701 [http-nio-8081-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2025-05-23 15:54:05.702 [http-nio-8081-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2025-05-23 15:54:05.703 [http-nio-8081-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@2fead6e4
+2025-05-23 15:54:05.704 [http-nio-8081-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@7d0af1e0
+2025-05-23 15:54:05.705 [http-nio-8081-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-05-23 15:54:05.706 [http-nio-8081-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2025-05-23 15:54:05.714 [http-nio-8081-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/second", parameters={}
+2025-05-23 15:54:05.730 [http-nio-8081-exec-2] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.example.demo.TestController#getTestMessage1()
+2025-05-23 15:54:05.755 [http-nio-8081-exec-2] INFO  com.example.demo.TestController - {"timestamp":"2025-05-23T10:24:05.752707400Z","level":"INFO","message":"Test log message222222","traceId":"8fa8f35df97f999980516c8dc2f40376","userId":"user-345","tenantId":"tenant-cde","sessionId":"session-1747995845747","durationMs":0,"data":{logType=TestLog222, log=Test log message22222, logSource=SpringBootService222},"logger":"com.example.demo.TestController"}
+2025-05-23 15:54:05.850 [http-nio-8081-exec-2] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor - Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-05-23 15:54:05.851 [http-nio-8081-exec-2] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor - Writing ["Hello from 2nd service!"]
+2025-05-23 15:54:05.856 [http-nio-8081-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-05-23 15:57:17.830 [main] INFO  com.example.demo.DemoApplication - Starting DemoApplication using Java 21.0.1 with PID 11240 (C:\Users\srima\Downloads\API-Gateway\target\classes started by srima in C:\Users\srima\Downloads\API-Gateway)
+2025-05-23 15:57:17.839 [main] INFO  com.example.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-23 15:57:18.787 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2025-05-23 15:57:18.858 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 969 ms
+2025-05-23 15:57:18.875 [main] DEBUG org.springframework.boot.web.servlet.ServletContextInitializerBeans - Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105, kongOnlyFilter urls=[/*] order=2147483647
+2025-05-23 15:57:18.876 [main] DEBUG org.springframework.boot.web.servlet.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/]
+2025-05-23 15:57:19.114 [main] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - 5 mappings in 'requestMappingHandlerMapping'
+2025-05-23 15:57:19.206 [main] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-05-23 15:57:19.232 [main] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-05-23 15:57:19.294 [main] DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-05-23 15:57:19.404 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2025-05-23 15:57:19.413 [main] INFO  com.example.demo.DemoApplication - Started DemoApplication in 2.02 seconds (process running for 2.975)
+2025-05-23 15:57:21.567 [http-nio-8081-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-05-23 15:57:21.568 [http-nio-8081-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2025-05-23 15:57:21.568 [http-nio-8081-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2025-05-23 15:57:21.569 [http-nio-8081-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2025-05-23 15:57:21.570 [http-nio-8081-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@3ca02def
+2025-05-23 15:57:21.570 [http-nio-8081-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@7079b661
+2025-05-23 15:57:21.570 [http-nio-8081-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-05-23 15:57:21.571 [http-nio-8081-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2025-05-23 15:57:21.579 [http-nio-8081-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/second", parameters={}
+2025-05-23 15:57:21.601 [http-nio-8081-exec-2] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.example.demo.TestController#getTestMessage1()
+2025-05-23 15:57:21.625 [http-nio-8081-exec-2] INFO  com.example.demo.TestController - {"timestamp":"2025-05-23T10:27:21.622011700Z","level":"INFO","message":"Test log message222222","traceId":"8fa8f35df97f999980516c8dc2f40376","userId":"user-345","tenantId":"tenant-cde","sessionId":"session-1747996041618","durationMs":0,"data":{logType=TestLog222, log=Test log message22222, logSource=SpringBootService222},"logger":"com.example.demo.TestController"}
+2025-05-23 15:57:21.638 [http-nio-8081-exec-2] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor - Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-05-23 15:57:21.641 [http-nio-8081-exec-2] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor - Writing ["Hello from 2nd service!"]
+2025-05-23 15:57:21.648 [http-nio-8081-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-05-23 15:58:22.461 [http-nio-8081-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/second", parameters={}
+2025-05-23 15:58:22.462 [http-nio-8081-exec-5] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.example.demo.TestController#getTestMessage1()
+2025-05-23 15:58:22.463 [http-nio-8081-exec-5] INFO  com.example.demo.TestController - {"timestamp":"2025-05-23T10:28:22.463819100Z","level":"INFO","message":"Test log message222222","traceId":"8fa8f35df97f999980516c8dc2f40376","userId":"user-345","tenantId":"tenant-cde","sessionId":"session-1747996102462","durationMs":0,"data":{logType=TestLog222, log=Test log message22222, logSource=SpringBootService222},"logger":"com.example.demo.TestController"}
+2025-05-23 15:58:22.465 [http-nio-8081-exec-5] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor - Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-05-23 15:58:22.466 [http-nio-8081-exec-5] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor - Writing ["Hello from 2nd service!"]
+2025-05-23 15:58:22.468 [http-nio-8081-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-05-23 15:58:23.493 [http-nio-8081-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/second", parameters={}
+2025-05-23 15:58:23.495 [http-nio-8081-exec-6] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.example.demo.TestController#getTestMessage1()
+2025-05-23 15:58:23.497 [http-nio-8081-exec-6] INFO  com.example.demo.TestController - {"timestamp":"2025-05-23T10:28:23.496104600Z","level":"INFO","message":"Test log message222222","traceId":"8fa8f35df97f999980516c8dc2f40376","userId":"user-345","tenantId":"tenant-cde","sessionId":"session-1747996103496","durationMs":0,"data":{logType=TestLog222, log=Test log message22222, logSource=SpringBootService222},"logger":"com.example.demo.TestController"}
+2025-05-23 15:58:23.498 [http-nio-8081-exec-6] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor - Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-05-23 15:58:23.499 [http-nio-8081-exec-6] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor - Writing ["Hello from 2nd service!"]
+2025-05-23 15:58:23.502 [http-nio-8081-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-05-23 16:00:59.126 [SpringApplicationShutdownHook] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-23 16:00:59.139 [tomcat-shutdown] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete

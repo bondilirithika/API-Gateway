@@ -15,12 +15,12 @@ public class TestController {
 
     @GetMapping("/test")
     public String getTestMessage() {
-        // Log a message with a custom context
+        //Log a message with a custom context
         LogContext context = new LogContext(
-            "4fa8f35df97f427a80516c8dc2f40376",  // App
-            "user-123",                          // User ID from JWT sub claim if available
-            "tenant-abc",                        // Tenant ID
-            "session-" + System.currentTimeMillis() // Generate session ID
+                "4fa8f35df97f427a80516c8dc2f40376",  // App
+                "user-123",                          // User ID from JWT sub claim if available
+                "tenant-abc",                        // Tenant ID
+                "session-" + System.currentTimeMillis() // Generate session ID
         );
         HashMap<String, Object> data = new HashMap<>();
         data.put("log", "Test log message");
@@ -33,6 +33,17 @@ public class TestController {
 
     @GetMapping("/second")
     public String getTestMessage1() {
+        LogContext context = new LogContext(
+                "8fa8f35df97f999980516c8dc2f40376",  // trace ID
+                "user-345",                          // User ID from JWT sub claim if available
+                "tenant-cde",                        // Tenant ID
+                "session-" + System.currentTimeMillis() // Generate session ID
+        );
+        HashMap<String, Object> data = new HashMap<>();
+        data.put("log", "Test log message22222");
+        data.put("logType", "TestLog222");
+        data.put("logSource", "SpringBootService222");
+        loggingService.logInfo("Test log message222222", context, data);
         return "Hello from 2nd service!";
     }
 }

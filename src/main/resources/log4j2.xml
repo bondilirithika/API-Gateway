@@ -2,17 +2,31 @@
 <Configuration status="WARN">
     <Properties>
         <Property name="LOG_PATTERN">%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</Property>
-        <Property name="APP_LOG_ROOT">./logs</Property>
+        <Property name="APP_LOG_ROOT">logs</Property>
     </Properties>
 
     <Appenders>
+        <!-- Console Appender -->
         <Console name="Console" target="SYSTEM_OUT">
             <PatternLayout pattern="${LOG_PATTERN}"/>
         </Console>
 
-        <RollingFile name="FileAppender" 
+        <!-- Application Log File Appender -->
+        <RollingFile name="AppFileAppender"
                      fileName="${APP_LOG_ROOT}/app.log"
                      filePattern="${APP_LOG_ROOT}/app-%d{yyyy-MM-dd}-%i.log">
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1"/>
+                <SizeBasedTriggeringPolicy size="10MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="10"/>
+        </RollingFile>
+
+        <!-- Standard Log File Appender -->
+        <RollingFile name="StandardFileAppender"
+                     fileName="${APP_LOG_ROOT}/application.log"
+                     filePattern="${APP_LOG_ROOT}/application-%d{yyyy-MM-dd}-%i.log">
             <PatternLayout pattern="${LOG_PATTERN}"/>
             <Policies>
                 <TimeBasedTriggeringPolicy interval="1"/>
@@ -26,18 +40,33 @@
         <!-- Root Logger -->
         <Root level="info">
             <AppenderRef ref="Console"/>
-            <AppenderRef ref="FileAppender"/>
+            <AppenderRef ref="StandardFileAppender"/>
         </Root>
-        
-        <!-- Custom Loggers -->
-        <Logger name="com.example.demo" level="debug" additivity="false">
+
+        <!-- Application Logger - Only specific packages -->
+        <Logger name="com.example.demo.TestController" level="debug" additivity="false">
             <AppenderRef ref="Console"/>
-            <AppenderRef ref="FileAppender"/>
+            <AppenderRef ref="AppFileAppender"/>
+            <AppenderRef ref="StandardFileAppender"/>
         </Logger>
-        
-        <Logger name="com.zenv.logging" level="debug" additivity="false">
+
+        <!-- Zenv Logging Logger -->
+        <Logger name="com.zenv" level="debug" additivity="false">
             <AppenderRef ref="Console"/>
-            <AppenderRef ref="FileAppender"/>
+            <AppenderRef ref="AppFileAppender"/>
+            <AppenderRef ref="StandardFileAppender"/>
+        </Logger>
+
+        <!-- Filter out Spring Boot startup logs from app.log -->
+        <Logger name="org.springframework" level="info" additivity="false">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="StandardFileAppender"/>
+        </Logger>
+
+        <!-- Filter out Spring Boot application logs from app.log -->
+        <Logger name="com.example.demo.DemoApplication" level="info" additivity="false">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="StandardFileAppender"/>
         </Logger>
     </Loggers>
-</Configuration>
+</Configuration> 
